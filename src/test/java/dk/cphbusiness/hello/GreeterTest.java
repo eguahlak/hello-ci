@@ -11,4 +11,9 @@ public class GreeterTest {
     assertThat(Greeter.sayHello(), is("Hello World!"));
     }
   
+  @Test
+  public void testSayHelloKurt() throws Exception {
+    assertThat(Greeter.sayHello("Kurt"), is("Hello Kurt!"));
+    }
+  
   }
